@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/pages.css">
 </head>
 <body class="dark-stories-page dark-mode">
-    
+
      <!-- Site Header & Navigation Bar -->
   <header class="site-header dark-header" role="banner">
     <div class="container nav-wrapper">
@@ -31,5 +31,45 @@
       </button>
     </div>
   </header>
+
+   <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" role="navigation" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="explore.html">EXPLORE</a></li>
+      <li><a href="stories.html">STORIES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+    <!-- Archive Header Banner -->
+    <header class="archive-page-header dark-banner">
+      <div class="container container-narrow">
+        <span class="page-category-tag">FOLKLORE BESTIARY &amp; SPECTERS</span>
+        <h1 class="page-title">STORIES FROM THE SHADOWS</h1>
+        <p class="page-subtitle">“Creatures, spirits, and legends that have haunted the imagination of generations.”</p>
+      </div>
+    </header>
+
+    <!-- Filter & Stories Section -->
+    <section class="stories-main-section" aria-label="Shadow Stories Archive">
+      <div class="container">
+        <!-- Category Filter Bar -->
+        <div class="filter-bar-wrapper">
+          <button class="filter-btn active" data-filter="all">All Legends (9)</button>
+          <button class="filter-btn" data-filter="warnings">Warnings &amp; Guardians</button>
+          <button class="filter-btn" data-filter="spirits">Spirits &amp; The Dead</button>
+          <button class="filter-btn" data-filter="rituals">Rituals &amp; Divination</button>
+          <button class="filter-btn" data-filter="nature">Nature &amp; Felines</button>
+        </div>
+
+        <!-- 9 Story Cards Grid -->
+        <div class="stories-grid" id="stories-grid-container">
+          <!-- Dynamically populated from js/archive-data.js and js/main.js -->
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
