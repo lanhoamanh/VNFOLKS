@@ -247,3 +247,49 @@ body.dark-mode .mobile-nav-drawer {
 body.dark-mode .mobile-nav-links a {
   color: var(--c-golden-butter);
 }
+
+/* --------------------------------------------------------------------------
+   Typography & Atmospheric Elements
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--c-cowhide-cocoa);
+  line-height: 1.25;
+}
+
+.display-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--c-cowhide-cocoa);
+  opacity: 0.9;
+}
+
+/* Ornamental Horizontal Divider */
+.ornamental-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 480px;
+  opacity: 0.5;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--c-toasted-caramel);
+}
