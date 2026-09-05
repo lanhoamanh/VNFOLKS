@@ -124,3 +124,42 @@ body {
   opacity: 0.85;
   transform: scale(1.02);
 }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2.2rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-cowhide-cocoa);
+  position: relative;
+  padding: 0.4rem 0;
+  transition: color var(--tr-fast);
+}
+
+.site-header.dark-header .nav-item a {
+  color: var(--c-golden-butter);
+}
+
+.nav-item a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--c-spiced-wine);
+  transition: width var(--tr-smooth);
+}
+
+.site-header.dark-header .nav-item a::after {
+  background-color: var(--c-golden-butter);
+}
